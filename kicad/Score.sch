@@ -279,7 +279,7 @@ Pos_X
 Wire Wire Line
 	3450 1250 4000 1250
 Text HLabel 6600 1750 0    50   Input ~ 0
-Rampe_Point
+Ramp_score
 $Comp
 L Device:R R401
 U 1 1 5C8DFDD1
@@ -996,7 +996,7 @@ Wire Wire Line
 	7400 1500 7400 1400
 Connection ~ 7400 1500
 Text HLabel 6600 3500 0    50   Input ~ 0
-Rampe_Point
+Ramp_score
 $Comp
 L Amplifier_Operational:TL082 U?
 U 2 1 5CA3B63F
@@ -1381,11 +1381,11 @@ Wire Wire Line
 	3950 2850 3950 2750
 Wire Wire Line
 	3950 2750 4000 2750
+Connection ~ 4650 2650
+Wire Wire Line
+	4650 2650 4750 2650
 Wire Bus Line
 	3150 4250 3150 5550
 Wire Bus Line
 	3150 4250 4200 4250
-Connection ~ 4650 2650
-Wire Wire Line
-	4650 2650 4750 2650
 $EndSCHEMATC

@@ -20,8 +20,8 @@ F0 "Oscillateurs" 50
 F1 "osc.sch" 50
 F2 "Sin" I R 1350 2400 50 
 F3 "Cos" I R 1350 2550 50 
-F4 "Rampe" I R 1350 2900 50 
 F5 "Pulse" I R 1350 2750 50 
+F6 "Ramp" I R 1350 2900 50 
 $EndSheet
 $Sheet
 S 5200 1000 1150 750 
@@ -48,9 +48,9 @@ F5 "New_Frame" I L 6850 5750 50
 F6 "Score_Display1" I R 8000 5400 50 
 F7 "Score_Display2" I R 8000 5550 50 
 F8 "Pos_X" I L 6850 5400 50 
-F9 "Rampe_Point" I L 6850 5900 50 
 F10 "Score_X" I R 8000 5750 50 
 F11 "~Score_X" I R 8000 5850 50 
+F12 "Ramp_score" I L 6850 5900 50 
 $EndSheet
 $Comp
 L Analog_Switch:DG412xJ U105
@@ -410,13 +410,13 @@ Cos
 Text Label 1650 2750 2    50   ~ 0
 Pulse
 Text Label 1650 2900 2    50   ~ 0
-Rampe
+Ramp
 Text Label 750  3900 0    50   ~ 0
-Rampe
+Ramp
 Wire Wire Line
 	1900 4400 2450 4400
 Text Label 2450 4400 2    50   ~ 0
-Rampe_pad
+Ramp_pad
 $Comp
 L Device:R R105
 U 1 1 5C7A80D2
@@ -457,11 +457,11 @@ Wire Wire Line
 Wire Wire Line
 	2750 3900 2500 3900
 Text Label 2500 3900 0    50   ~ 0
-Rampe
+Ramp
 Wire Wire Line
 	3650 4400 4200 4400
 Text Label 4200 4400 2    50   ~ 0
-Rampe_point
+Ramp_score
 $Comp
 L Analog_Switch:DG412xJ U107
 U 4 1 5C7E1C1A
@@ -855,7 +855,7 @@ Pulse
 Wire Wire Line
 	6350 5900 6850 5900
 Text Label 6350 5900 0    50   ~ 0
-Rampe_point
+Ramp_score
 Wire Wire Line
 	8000 5400 8650 5400
 Wire Wire Line
@@ -1574,7 +1574,7 @@ F 3 "~" H 4750 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 4200 6300 0    50   ~ 0
-Rampe_pad
+Ramp_pad
 Wire Wire Line
 	5800 6000 6300 6000
 Connection ~ 5800 6000
@@ -1683,7 +1683,7 @@ F 3 "~" H 4750 7350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 4200 7350 0    50   ~ 0
-Rampe_pad
+Ramp_pad
 Wire Wire Line
 	5800 7050 6300 7050
 Connection ~ 5800 7050
@@ -1897,4 +1897,82 @@ F 3 "" H 10750 850 50  0001 C CNN
 	1    10750 850 
 	1    0    0    -1  
 $EndComp
+Text Notes 7000 6800 0    50   ~ 0
+TODO: \n* Add reset control\n* Add action on bounce (sound ? light ?)
+Text Notes 5850 3450 0    50   ~ 0
+Select sequently which\noutput to display
+Text Notes 9200 4800 0    50   ~ 0
+Output multiplexer
+Text Notes 1300 4100 0    50   ~ 0
+Shape the ramp for the pads
+Text Notes 3100 4100 0    50   ~ 0
+Shape the ramp for \nthe lines of the scores
+Text Notes 1300 5600 0    50   ~ 0
+User input 1 (aka PAD1)
+Text Notes 3100 5600 0    50   ~ 0
+User input 2 (aka PAD2)
+Text Notes 4800 6500 0    50   ~ 0
+Sum position and shape of the pads
+Wire Notes Line width 12 style solid
+	8050 600  7100 600 
+Wire Notes Line style solid
+	7150 900  7150 1150
+Wire Notes Line width 12 style solid
+	7100 600  7100 1550
+Wire Notes Line width 12 style solid
+	7100 1550 8050 1550
+Wire Notes Line width 12 style solid
+	8050 1550 8050 600 
+Wire Notes Line style solid
+	8000 1200 8000 1450
+Wire Notes Line style solid
+	7250 650  7250 700 
+Wire Notes Line style solid
+	7300 650  7300 700 
+Wire Notes Line style solid
+	7350 650  7350 700 
+Wire Notes Line style solid
+	7400 650  7400 700 
+Wire Notes Line style solid
+	7900 650  7900 700 
+Wire Notes Line style solid
+	7850 650  7850 700 
+Wire Notes Line style solid
+	7800 650  7800 700 
+Wire Notes Line style solid
+	7750 650  7750 700 
+Wire Notes Line style solid
+	7700 650  7700 700 
+Wire Notes Line style solid
+	7650 650  7650 700 
+Wire Notes Line style solid
+	7450 900  7450 950 
+Wire Notes Line style solid
+	7500 900  7500 950 
+Wire Notes Line style solid
+	7450 900  7500 900 
+Wire Notes Line style solid
+	7500 950  7450 950 
+Text Notes 7100 1650 0    50   ~ 0
+Scope
+Text Notes 6900 1000 0    50   ~ 0
+Pad
+Text Notes 6900 800  0    50   ~ 0
+Ball
+Text Notes 7750 550  0    50   ~ 0
+Score
+Wire Notes Line
+	7450 800  7450 900 
+Wire Notes Line
+	6900 800  7450 800 
+Wire Notes Line
+	6900 1000 7150 1000
+Wire Notes Line
+	7100 1650 7350 1650
+Wire Notes Line
+	7350 1650 7350 1550
+Wire Notes Line
+	7950 550  7700 550 
+Wire Notes Line
+	7700 550  7700 650 
 $EndSCHEMATC

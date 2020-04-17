@@ -348,7 +348,7 @@ Sin
 Text HLabel 5600 1650 2    50   Input ~ 0
 Cos
 Text HLabel 6150 3500 2    50   Input ~ 0
-Rampe
+Ramp
 Text HLabel 6150 4450 2    50   Input ~ 0
 Pulse
 $Comp
@@ -1092,7 +1092,7 @@ F 1 "1N4148" V 5305 4921 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5350 4825 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5350 5000 50  0001 C CNN
 	1    5350 5000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
