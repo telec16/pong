@@ -16,17 +16,17 @@ $EndDescr
 $Sheet
 S 650  2250 700  800 
 U 5C71D21F
-F0 "Oscillateurs" 50
+F0 "Oscillators" 50
 F1 "osc.sch" 50
 F2 "Sin" I R 1350 2400 50 
 F3 "Cos" I R 1350 2550 50 
-F5 "Pulse" I R 1350 2750 50 
-F6 "Ramp" I R 1350 2900 50 
+F4 "Pulse" I R 1350 2750 50 
+F5 "Ramp" I R 1350 2900 50 
 $EndSheet
 $Sheet
 S 5200 1000 1150 750 
 U 5C722E04
-F0 "Ball" 50
+F0 "BallX" 50
 F1 "Ball.sch" 50
 F2 "Increase" I L 5200 1200 50 
 F3 "Reset" I L 5200 1350 50 
@@ -48,9 +48,9 @@ F5 "New_Frame" I L 6850 5750 50
 F6 "Score_Display1" I R 8000 5400 50 
 F7 "Score_Display2" I R 8000 5550 50 
 F8 "Pos_X" I L 6850 5400 50 
-F10 "Score_X" I R 8000 5750 50 
-F11 "~Score_X" I R 8000 5850 50 
-F12 "Ramp_score" I L 6850 5900 50 
+F9 "Score_X" I R 8000 5750 50 
+F10 "~Score_X" I R 8000 5850 50 
+F11 "Ramp_score" I L 6850 5900 50 
 $EndSheet
 $Comp
 L Analog_Switch:DG412xJ U105
@@ -121,7 +121,7 @@ $EndComp
 $Sheet
 S 5200 2000 1150 750 
 U 5C7A25BC
-F0 "sheet5C7A25B3" 50
+F0 "BallY" 50
 F1 "Ball.sch" 50
 F2 "Increase" I L 5200 2200 50 
 F3 "Reset" I L 5200 2350 50 
@@ -1897,8 +1897,8 @@ F 3 "" H 10750 850 50  0001 C CNN
 	1    10750 850 
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 6800 0    50   ~ 0
-TODO: \n* Add reset control\n* Add action on bounce (sound ? light ?)
+Text Notes 7000 6900 0    50   ~ 0
+TODO: \n* Add reset control\n* Add score control\n* Add action on bounce (sound ? light ?)
 Text Notes 5850 3450 0    50   ~ 0
 Select sequently which\noutput to display
 Text Notes 9200 4800 0    50   ~ 0
@@ -1914,65 +1914,65 @@ User input 2 (aka PAD2)
 Text Notes 4800 6500 0    50   ~ 0
 Sum position and shape of the pads
 Wire Notes Line width 12 style solid
-	8050 600  7100 600 
+	10900 5250 9950 5250
 Wire Notes Line style solid
-	7150 900  7150 1150
+	10000 5550 10000 5800
 Wire Notes Line width 12 style solid
-	7100 600  7100 1550
+	9950 5250 9950 6200
 Wire Notes Line width 12 style solid
-	7100 1550 8050 1550
+	9950 6200 10900 6200
 Wire Notes Line width 12 style solid
-	8050 1550 8050 600 
+	10900 6200 10900 5250
 Wire Notes Line style solid
-	8000 1200 8000 1450
+	10850 5850 10850 6100
 Wire Notes Line style solid
-	7250 650  7250 700 
+	10100 5300 10100 5350
 Wire Notes Line style solid
-	7300 650  7300 700 
+	10150 5300 10150 5350
 Wire Notes Line style solid
-	7350 650  7350 700 
+	10200 5300 10200 5350
 Wire Notes Line style solid
-	7400 650  7400 700 
+	10250 5300 10250 5350
 Wire Notes Line style solid
-	7900 650  7900 700 
+	10750 5300 10750 5350
 Wire Notes Line style solid
-	7850 650  7850 700 
+	10700 5300 10700 5350
 Wire Notes Line style solid
-	7800 650  7800 700 
+	10650 5300 10650 5350
 Wire Notes Line style solid
-	7750 650  7750 700 
+	10600 5300 10600 5350
 Wire Notes Line style solid
-	7700 650  7700 700 
+	10550 5300 10550 5350
 Wire Notes Line style solid
-	7650 650  7650 700 
+	10500 5300 10500 5350
 Wire Notes Line style solid
-	7450 900  7450 950 
+	10300 5550 10300 5600
 Wire Notes Line style solid
-	7500 900  7500 950 
+	10350 5550 10350 5600
 Wire Notes Line style solid
-	7450 900  7500 900 
+	10300 5550 10350 5550
 Wire Notes Line style solid
-	7500 950  7450 950 
-Text Notes 7100 1650 0    50   ~ 0
+	10350 5600 10300 5600
+Text Notes 9950 6300 0    50   ~ 0
 Scope
-Text Notes 6900 1000 0    50   ~ 0
+Text Notes 9750 5650 0    50   ~ 0
 Pad
-Text Notes 6900 800  0    50   ~ 0
+Text Notes 9750 5450 0    50   ~ 0
 Ball
-Text Notes 7750 550  0    50   ~ 0
+Text Notes 10600 5200 0    50   ~ 0
 Score
 Wire Notes Line
-	7450 800  7450 900 
+	10300 5450 10300 5550
 Wire Notes Line
-	6900 800  7450 800 
+	9750 5450 10300 5450
 Wire Notes Line
-	6900 1000 7150 1000
+	9750 5650 10000 5650
 Wire Notes Line
-	7100 1650 7350 1650
+	9950 6300 10200 6300
 Wire Notes Line
-	7350 1650 7350 1550
+	10200 6300 10200 6200
 Wire Notes Line
-	7950 550  7700 550 
+	10800 5200 10550 5200
 Wire Notes Line
-	7700 550  7700 650 
+	10550 5200 10550 5300
 $EndSCHEMATC
