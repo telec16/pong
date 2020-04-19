@@ -367,7 +367,7 @@ L Device:R R407
 U 1 1 5C940B4B
 P 3800 4750
 F 0 "R407" V 3750 4450 50  0000 L CNN
-F 1 "91k" V 3800 4700 50  0000 L CNN
+F 1 "82k" V 3800 4700 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3730 4750 50  0001 C CNN
 F 3 "~" H 3800 4750 50  0001 C CNN
 	1    3800 4750
@@ -1334,14 +1334,14 @@ Text Notes 6050 2200 0    50   ~ 0
 Open-collector:\nWhen not the current score,\ndraw a dot instead of a line
 Text Notes 7050 1250 0    50   ~ 0
 Offset to place the score\non top of the screen
-Text Notes 8100 6050 0    50   ~ 0
-VISUAL - OK
+Text Notes 6200 6150 0    50   ~ 0
+REALITY - OK
 $Comp
 L Device:R R426
 U 1 1 5E9D8624
 P 3800 5150
 F 0 "R426" V 3750 4850 50  0000 L CNN
-F 1 "2k2" V 3800 5100 50  0000 L CNN
+F 1 "12k" V 3800 5050 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3730 5150 50  0001 C CNN
 F 3 "~" H 3800 5150 50  0001 C CNN
 	1    3800 5150
@@ -1392,4 +1392,6 @@ Wire Bus Line
 	3150 4250 3150 5550
 Wire Bus Line
 	3150 4250 4200 4250
+Text Notes 8150 4250 0    50   ~ 0
+VISUAL - OK
 $EndSCHEMATC
