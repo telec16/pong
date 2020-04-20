@@ -581,7 +581,7 @@ AR Path="/5C78AC26/5C8FB93C" Ref="R?"  Part="1"
 AR Path="/5C7A25BC/5C8FB93C" Ref="R?"  Part="1" 
 AR Path="/5C71D21F/5C8FB93C" Ref="R213"  Part="1" 
 F 0 "R213" H 2720 3696 50  0000 L CNN
-F 1 "100" H 2720 3605 50  0000 L CNN
+F 1 "330" H 2720 3605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 3650 50  0001 C CNN
 F 3 "~" H 2650 3650 50  0001 C CNN
 	1    2650 3650
@@ -590,7 +590,7 @@ $EndComp
 Wire Wire Line
 	2650 3450 2650 3500
 $Comp
-L Device:Q_NJFET_DGS Q?
+L Device:Q_NJFET_GSD Q?
 U 1 1 5C8FB934
 P 2550 3250
 AR Path="/5C722E04/5C8FB934" Ref="Q?"  Part="1" 
@@ -598,7 +598,7 @@ AR Path="/5C78AC26/5C8FB934" Ref="Q?"  Part="1"
 AR Path="/5C7A25BC/5C8FB934" Ref="Q?"  Part="1" 
 AR Path="/5C71D21F/5C8FB934" Ref="Q202"  Part="1" 
 F 0 "Q202" H 2741 3296 50  0000 L CNN
-F 1 "2N3819" H 2741 3205 50  0000 L CNN
+F 1 "J111" H 2741 3205 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 2750 3350 50  0001 C CNN
 F 3 "~" H 2550 3250 50  0001 C CNN
 	1    2550 3250
@@ -967,8 +967,8 @@ F 3 "~" H 4050 4150 50  0001 C CNN
 	1    4050 4150
 	0    -1   -1   0   
 $EndComp
-Text Notes 2650 4050 1    50   ~ 0
-7mA
+Text Notes 2750 4050 1    50   ~ 0
+7-8mA
 Text Notes 3950 3500 0    50   ~ 0
 18kHz
 Wire Wire Line
