@@ -721,19 +721,6 @@ Wire Wire Line
 Connection ~ 3950 1450
 Wire Wire Line
 	3950 1450 4000 1450
-$Comp
-L power:-5V #PWR?
-U 1 1 5C99BD96
-P 3600 3200
-AR Path="/5C99BD96" Ref="#PWR?"  Part="1" 
-AR Path="/5C74122A/5C99BD96" Ref="#PWR0414"  Part="1" 
-F 0 "#PWR0414" H 3600 3300 50  0001 C CNN
-F 1 "-5V" H 3615 3373 50  0000 C CNN
-F 2 "" H 3600 3200 50  0001 C CNN
-F 3 "" H 3600 3200 50  0001 C CNN
-	1    3600 3200
-	0    -1   -1   0   
-$EndComp
 $Sheet
 S 4750 2450 1250 1500
 U 5C9A25FD
@@ -778,28 +765,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4300 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 3100 4750 3100
-$Comp
-L Device:R R406
-U 1 1 5C9B5DAF
-P 3750 3200
-F 0 "R406" V 3850 3200 50  0000 C CNN
-F 1 "100" V 3750 3200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3680 3200 50  0001 C CNN
-F 3 "~" H 3750 3200 50  0001 C CNN
-	1    3750 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R410
-U 1 1 5C9B5DB6
-P 3950 3400
-F 0 "R410" H 4020 3446 50  0000 L CNN
-F 1 "1k" H 4020 3355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3880 3400 50  0001 C CNN
-F 3 "~" H 3950 3400 50  0001 C CNN
-	1    3950 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C9B5DC3
@@ -1388,10 +1353,45 @@ F 3 "~" H 4200 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 5300 4200 5350
+Text Notes 8150 4250 0    50   ~ 0
+REALITY - OK
 Wire Bus Line
 	3150 4250 3150 5550
 Wire Bus Line
 	3150 4250 4200 4250
-Text Notes 8150 4250 0    50   ~ 0
-VISUAL - OK
+$Comp
+L Device:R R410
+U 1 1 5C9B5DB6
+P 3950 3400
+F 0 "R410" H 4020 3446 50  0000 L CNN
+F 1 "1k" H 4020 3355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3880 3400 50  0001 C CNN
+F 3 "~" H 3950 3400 50  0001 C CNN
+	1    3950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R406
+U 1 1 5C9B5DAF
+P 3750 3200
+F 0 "R406" V 3850 3200 50  0000 C CNN
+F 1 "100" V 3750 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3680 3200 50  0001 C CNN
+F 3 "~" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5C99BD96
+P 3600 3200
+AR Path="/5C99BD96" Ref="#PWR?"  Part="1" 
+AR Path="/5C74122A/5C99BD96" Ref="#PWR0414"  Part="1" 
+F 0 "#PWR0414" H 3600 3300 50  0001 C CNN
+F 1 "-5V" H 3615 3373 50  0000 C CNN
+F 2 "" H 3600 3200 50  0001 C CNN
+F 3 "" H 3600 3200 50  0001 C CNN
+	1    3600 3200
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
