@@ -590,7 +590,7 @@ $EndComp
 Wire Wire Line
 	2650 3450 2650 3500
 $Comp
-L Device:Q_NJFET_GSD Q?
+L Device:Q_NJFET_DSG Q?
 U 1 1 5C8FB934
 P 2550 3250
 AR Path="/5C722E04/5C8FB934" Ref="Q?"  Part="1" 
