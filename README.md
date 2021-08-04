@@ -25,7 +25,7 @@ I decided to build the score counter in free-form, since it has all these diodes
 
 ## Goal detector
 
-The goal detector PCB is a tilable design: you need two PCBs to make one. It lower PCB cost (divide by two) and use a little less components.
+The goal detector PCB is a tilable design: you need two PCBs to make one. It lowers PCB cost (divide by two) and uses a little less components.
 
 ![Tiles](https://github.com/telec16/pong/raw/master/pictures/tiles.png "Three PCB aligned, to make a bigger one")
 
